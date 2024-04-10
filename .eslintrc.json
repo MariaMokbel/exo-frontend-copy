@@ -1,3 +1,72 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "prettier",
+    "next/core-web-vitals"
+  ],
+  "plugins": [
+    "eslint-plugin-prettier"
+  ],
+  "ignorePatterns": [
+    "**/*.js"
+  ],
+  "parserOptions": {
+    "requireConfigFile": false,
+    "ecmaVersion": 9,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "rules": {
+    "max-len": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "tabWidth": 2,
+        "singleQuote": false,
+        "printWidth": 100,
+        "semi": true,
+        "usePrettierrc": false
+      }
+    ],
+    "no-unused-vars": "off",
+    "no-irregular-whitespace": "off",
+    "prefer-const": [
+      "error"
+    ],
+    "prefer-spread": [
+      "error"
+    ],
+    "@next/next/no-img-element": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "indent": 0,
+    "import/order": [
+      "error",
+      {
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        },
+        "newlines-between": "always",
+        "groups": [
+          "builtin",
+          "external",
+          "parent",
+          "sibling",
+          "index"
+        ],
+        "pathGroups": [
+          {
+            "pattern": "@/**/*",
+            "group": "parent",
+            "position": "before"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": [
+          "builtin"
+        ]
+      }
+    ]
+  }
 }
