@@ -3,13 +3,9 @@
 import React from "react";
 import styled from "styled-components";
 
-import { buttonReset, TotalRecapDesktop } from "@/app/components/style";
-
-interface PaymentContainerProps {
-  totalPrice: number;
-  totalTicketCount: number;
-  className?: string;
-}
+import { buttonReset } from "@/app/components/style";
+import { PaymentContainerProps } from "./types";
+import { TotalRecapDesktop } from "./styles";
 
 const PaymentContainer: React.FC<PaymentContainerProps> = ({
   totalPrice,

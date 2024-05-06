@@ -26,23 +26,6 @@ export const UnderlinedTitle = styled.h1`
   width: 100%;
   border-bottom: 1px solid #353535;
 `;
-
-export const TicketPickersContainer = styled.div`
-  padding-top: 20px;
-  display: grid;
-  grid-gap: 1.2rem;
-`;
-
-export const TicketPicker = styled.div`
-  display: flex;
-  justify-content: space-between;
-`;
-
-export const TicketPrice = styled.p`
-  font-size: 18px;
-  color: var(--accent);
-`;
-
 export const baseNumberInputStyle = css`
   margin: 0;
   padding: 0;
@@ -94,15 +77,38 @@ export const baseNumberInputStyle = css`
   }
 `;
 
-export const TotalRecapDesktop = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 50%;
+export const InputText = styled.input`
+  margin: 0;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid var(--white);
+  color: var(--white);
+  background-color: var(--background-black);
 
-  p:nth-child(2) {
-    font-size: 40px;
-    color: var(--accent);
+  &:placeholder {
+    opacity: 0.2;
+  }
+`;
+
+export const Button = styled.button`
+  ${buttonReset};
+  padding: 8px 16px;
+  border-radius: 20px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+
+  transition:
+    box-shadow 0.2s,
+    background 0.2s,
+    color 0.2s;
+  background: var(--accent);
+  color: #000;
+
+  &[disabled] {
+    cursor: not-allowed;
+    opacity: 0.3;
   }
 `;

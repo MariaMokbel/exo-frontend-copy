@@ -5,9 +5,9 @@
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
-  --background-black: #0D0D0D;
+  --background-black: #0d0d0d;
   --white: #ffffff;
-  --accent: #67FB9A;
+  --accent: #75ba03;
 
   --grid-offset: ${rem(72)};
   --grid-max-width: ${rem(1286)};
@@ -34,4 +34,3 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
