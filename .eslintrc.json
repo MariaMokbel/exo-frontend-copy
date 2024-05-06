@@ -1,14 +1,7 @@
 {
-  "extends": [
-    "prettier",
-    "next/core-web-vitals"
-  ],
-  "plugins": [
-    "eslint-plugin-prettier"
-  ],
-  "ignorePatterns": [
-    "**/*.js"
-  ],
+  "extends": ["prettier", "jsx-a11y/recommended", "next/core-web-vitals"],
+  "plugins": ["eslint-plugin-prettier"],
+  "ignorePatterns": ["**/*.js"],
   "parserOptions": {
     "requireConfigFile": false,
     "ecmaVersion": 9,
@@ -32,12 +25,8 @@
     ],
     "no-unused-vars": "off",
     "no-irregular-whitespace": "off",
-    "prefer-const": [
-      "error"
-    ],
-    "prefer-spread": [
-      "error"
-    ],
+    "prefer-const": ["error"],
+    "prefer-spread": ["error"],
     "@next/next/no-img-element": "off",
     "react-hooks/exhaustive-deps": "off",
     "indent": 0,
@@ -49,13 +38,7 @@
           "caseInsensitive": true
         },
         "newlines-between": "always",
-        "groups": [
-          "builtin",
-          "external",
-          "parent",
-          "sibling",
-          "index"
-        ],
+        "groups": ["builtin", "external", "parent", "sibling", "index"],
         "pathGroups": [
           {
             "pattern": "@/**/*",
@@ -63,9 +46,7 @@
             "position": "before"
           }
         ],
-        "pathGroupsExcludedImportTypes": [
-          "builtin"
-        ]
+        "pathGroupsExcludedImportTypes": ["builtin"]
       }
     ]
   }
